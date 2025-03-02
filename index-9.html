@@ -5,8 +5,65 @@
             <meta name = "author" content = "Perrett,Lapid,Daguro">
             <title>Puzzled Hangman</title>
         </head>
-
-
+        // HANGMAN
+        
+        // Global variables:
+        // - Array of words for the game
+        // - Variable to store current selected word
+        // - Health counter initialized to 5
+        // - Score counter initialized to 0
+        
+        // Function to initialize game:
+        // - Call function to generate random word
+        // - Set up initial lives display in HTML
+        
+        // Function to generate random word:
+        // - Generate random index within words array range
+        // - Select word from array using random index
+        
+        // Function to update hangman drawing based on health:
+        // Check health value:
+        // 4: Show head and torso
+        // 3: Show first arm
+        // 2: Show second arm
+        // 1: Show first leg
+        // 0: Show second leg and trigger game over
+        
+        // Function to handle letter guess:
+        // Increment score
+        
+        // Check win/lose conditions:
+        // If health reaches 0:
+        // Show loss alert
+        // Set health to -1 to prevent further plays
+        
+        // If score reaches 5:
+        // Show win alert
+        // Initial game setup call
+        
+        // Check game state:
+        // If already won (score == 5):
+        // Show alert and exit
+        // If already lost (health < 0):
+        // Show alert and exit
+        // Get user input via prompt
+            
+        // Validate input:
+        // If input length != 1:
+        // Show invalid input alert
+            
+        // Check letter in current word:
+        // If letter not found:
+        // Decrement health
+        // Update hangman drawing
+        // Update lives display
+            
+        // If letter found:
+        // If letter was already revealed:
+        // Treat as incorrect guess
+            
+        // Else:
+        // Reveal letter in UI
     <body>
       
 
