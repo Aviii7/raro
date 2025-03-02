@@ -4,96 +4,50 @@
             <meta charset = "UTF-8">
             <meta name = "author" content = "Perrett,Lapid,Daguro">
             <title>Puzzled Hangman</title>
+            
+            <style>
+                .section {
+                  position: relative;
+                  width: 100%;
+                  height: 100vh;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  overflow: hidden;
+                }
+                
+                .section h1 {
+                  text-align: center;
+                  font-size: 6rem;
+                  font-family: "Cookie";
+                  padding: 20px;
+                  margin: 15px;
+                  z-index: 1;
+                  opacity: 0.7;
+                }
+                
+                .video-container {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                }
+        </style>
         </head>
-        // HANGMAN
-        
-        // Global variables:
-        // - Array of words for the game
-        // - Variable to store current selected word
-        // - Health counter initialized to 5
-        // - Score counter initialized to 0
-        
-        // Function to initialize game:
-        // - Call function to generate random word
-        // - Set up initial lives display in HTML
-        
-        // Function to generate random word:
-        // - Generate random index within words array range
-        // - Select word from array using random index
-        
-        // Function to update hangman drawing based on health:
-        // Check health value:
-        // 4: Show head and torso
-        // 3: Show first arm
-        // 2: Show second arm
-        // 1: Show first leg
-        // 0: Show second leg and trigger game over
-        
-        // Function to handle letter guess:
-        // Increment score
-        
-        // Check win/lose conditions:
-        // If health reaches 0:
-        // Show loss alert
-        // Set health to -1 to prevent further plays
-        
-        // If score reaches 5:
-        // Show win alert
-        // Initial game setup call
-        
-        // Check game state:
-        // If already won (score == 5):
-        // Show alert and exit
-        // If already lost (health < 0):
-        // Show alert and exit
-        // Get user input via prompt
-            
-        // Validate input:
-        // If input length != 1:
-        // Show invalid input alert
-            
-        // Check letter in current word:
-        // If letter not found:
-        // Decrement health
-        // Update hangman drawing
-        // Update lives display
-            
-        // If letter found:
-        // If letter was already revealed:
-        // Treat as incorrect guess
-            
-        // Else:
-        // Reveal letter in UI
-    <body>
-        <video style="margin: 0; padding: 0; box-sizing: border-box; width: 100%; height: 100%" autoplay loop muted src="BG_Animation.mov"></video>
-        <section style="z-index: 1">
-        <div>
-            <h1>Puzzled Hangman</h1>
-            <P>
-                <div id="chooseRandom"></div>
-            </P>
-        </div>
-        <button onclick = "looped()">Click me to start the game!</button>
+        <body>
+            <div class="section">
 
-        <script>
-            function looped(){
-            let word = ["blind","daily","craft","crime","human","sugar","grant","newly","noise","reach","ocean","magic","match","music",'radio','raise','taxes','tower','track','trial','treat','trend','fries','trend','fries','undue','threw','blank','waste','watch','wound','write','vital','voice','virus','white','worst','value','valid','usual','woman','unity','plant','manes','leads','reads','parse','clean'];
-            let randoIndex = Math.floor(Math.random() * word.length);
-            let randoWord = word[randoIndex];
-            document.getElementById("chooseRandom").innerHTML = randoWord; 
-        }
-
-        </script>
-
-      
-        <script>
-          let guess = prompt('Enter a letter');
-
-          function check(){
-            if (guess = )
-          }
-        </script>
-        </section>
-      
-    </body>
+                <h1>Welcome To Paradise</h1>
+        
+                <div class="video-container">
+                    <video autoplay loop muted>
+                        <source src="BG_Animation.mov" type="video/mov">
+                    </video>
+                </div>
+        
+            </div>
+            <div style="height: 400px; width: 100%">
+                <p></p>
+            </div>
+        </body>
 </html>
