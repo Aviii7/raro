@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset = "UTF-8">
+            <meta name = "author" content = "Perrett,Lapid,Daguro">
+            <title>Puzzled Hangman</title>
+        </head>
+
+
+    <body>
+      
+
+
+        <div>
+            <h1>Puzzled Hangman</h1>
+            <P>
+                <div id="chooseRandom"></div>
+            </P>
+        </div>
+        <button onclick = "looped()">Click me to start the game!</button>
+
+        <script>
+            function looped(){
+            let word = ["blind","daily","craft","crime","human","sugar","grant","newly","noise","reach","ocean","magic","match","music",'radio','raise','taxes','tower','track','trial','treat','trend','fries','trend','fries','undue','threw','blank','waste','watch','wound','write','vital','voice','virus','white','worst','value','valid','usual','woman','unity','plant','manes','leads','reads','parse','clean'];
+            let randoIndex = Math.floor(Math.random() * word.length);
+            let randoWord = word[randoIndex];
+            document.getElementById("chooseRandom").innerHTML = randoWord; 
+        }
+
+        </script>
+
+      
+        <script>
+          let guess = prompt('Enter a letter');
+
+          function check(){
+            if (guess = )
+          }
+        </script>
+
+      
+    </body>
+</html>
