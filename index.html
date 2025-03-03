@@ -16,17 +16,19 @@
                }
                .puzzle_pieces {
                    padding-top: 80px;
+                   position: relative;
+                   height: 100px;
                }
             </style>
         </head>
         <body>
             <video autoplay loop muted plays-inline center-align src="BG_Animation.mov"></video>
             <section center-align id="puzzle_pieces">
-                <img src="1.png">
-                <img src="2.png">
-                <img src="3.png">
-                <img src="4.png">
-                <img src="5.png">
+                <img style="z-index: 1" src="1.png">
+                <img style="z-index: 2" src="2.png">
+                <img style="z-index: 3" src="3.png">
+                <img style="z-index: 4" src="4.png">
+                <img style="z-index: 5" src="5.png">
             </section>
         </body>
 </html>
